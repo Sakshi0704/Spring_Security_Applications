@@ -31,9 +31,6 @@ public class SpringSecurityDbApp2Application {
 
 	public static void main(String[] args) {
 		SpringApplication.run(SpringSecurityDbApp2Application.class, args);
-		// Sakshi Choudhary
-		// Write one more thing again 
-	
 	}
 
 }
