@@ -37,8 +37,8 @@ public class HelperController {
 	@Autowired
 	private PasswordEncoder passwordEncoder;
 	
-	
-	@GetMapping("/hello") //http://localhost:8088/hello
+	//http://localhost:8088/swagger-ui/index.html#/ --> use this url while using swagger
+	@GetMapping("/hello") //http://localhost:8088/jpa/hello
 	public String testHandler() {
 		return "Welcome to Spring Security";
 	}

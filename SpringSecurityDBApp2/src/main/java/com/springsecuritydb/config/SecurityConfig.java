@@ -17,6 +17,7 @@ public class SecurityConfig {
 	
 		http.authorizeHttpRequests(auth -> {
 			auth.requestMatchers(HttpMethod.POST, "jpa/customers").permitAll()
+			.requestMatchers("jpa/hello").permitAll()
 			.requestMatchers("/swagger-ui*/**","/v3/api-docs/**").permitAll() 
 			// In case of Swagger we need to white list the Swagger-UI related end points:
 			.anyRequest().authenticated();
