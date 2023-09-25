@@ -21,7 +21,7 @@ import com.springsecuritydb.repository.CustomerRepository;
 public class MyAuthenticationProvider implements AuthenticationProvider{
 
 	@Autowired
-	private CustomerRepository customerRepo;
+	private CustomerRepository customerRepo; 
 	
 	@Autowired
 	private PasswordEncoder passwordEncoder;
@@ -50,6 +50,7 @@ public class MyAuthenticationProvider implements AuthenticationProvider{
 				return new UsernamePasswordAuthenticationToken(username,pwd,authorities);
 			}else {
 				throw new BadCredentialsException("Invalid Password");
+				
 			}
 		}
 	}
