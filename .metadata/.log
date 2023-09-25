@@ -6497,3 +6497,66 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-25 09:09:33.378
 !MESSAGE Boot project ADDED: SpringSecurityDBApp3-WithCutomAuthenticationProviderImplementation
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-25 09:33:09.038
+!MESSAGE Classpath changed for project: SpringSecurity-InMemory-App3-UsingRequestBodyAuthentication
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-25 09:33:10.350
+!MESSAGE Classpath changed for project: SpringSecurity-InMemory-App3-UsingRequestBodyAuthentication
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-25 09:33:10.355
+!MESSAGE Boot project ADDED: SpringSecurity-InMemory-App3-UsingRequestBodyAuthentication
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-25 09:33:10.554
+!MESSAGE Classpath changed for project: SpringSecurity-InMemory-App3-UsingRequestBodyAuthentication
+
+!ENTRY org.eclipse.jface 2 0 2023-09-25 09:33:19.938
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-09-25 09:33:19.938
+!MESSAGE A conflict occurred for CTRL+SHIFT+C:
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.eclipse.tm4e.languageconfiguration.toggleLineCommentCommand,Toggle Line Comment,
+		,
+		Category(org.eclipse.tm4e.languageconfiguration.category,TM4E Language Configuration,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.tm4e.languageconfiguration.toggleLineCommentCommand"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.springframework.tooling.boot.ls.ToggleComment,Toggle Comment,
+		,
+		Category(org.springframework.ide.eclipse.commands,Spring Generic Text Editor,Spring Language Server Commands,true),
+		WorkbenchHandlerServiceHandler("org.springframework.tooling.boot.ls.ToggleComment"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-25 09:33:38.000
+!MESSAGE Classpath changed for project: SpringSecurity-InMemory-App3-UsingRequestBodyAuthentication
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-25 09:33:38.003
+!MESSAGE Boot project REMOVED: SpringSecurity-InMemory-App3-UsingRequestBodyAuthentication
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-25 09:34:11.603
+!MESSAGE Classpath changed for project: SpringSecurity-InMemory-App4-UsingRequestBodyAuthentication
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-25 09:34:11.604
+!MESSAGE Boot project ADDED: SpringSecurity-InMemory-App4-UsingRequestBodyAuthentication
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-25 09:34:13.310
+!MESSAGE Classpath changed for project: SpringSecurity-InMemory-App4-UsingRequestBodyAuthentication
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-25 09:34:14.688
+!MESSAGE Classpath changed for project: SpringSecurity-InMemory-App4-UsingRequestBodyAuthentication
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-25 09:35:04.408
+!MESSAGE Classpath changed for project: SpringSecurity-InMemory-App4-UsingRequestBodyAuthentication
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-25 09:35:04.408
+!MESSAGE Boot project REMOVED: SpringSecurity-InMemory-App4-UsingRequestBodyAuthentication
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-25 09:35:41.838
+!MESSAGE Classpath changed for project: SpringSecurity-InMemory-App4-UsingRequestBodyAuthentication
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-25 09:35:41.838
+!MESSAGE Boot project ADDED: SpringSecurity-InMemory-App4-UsingRequestBodyAuthentication
