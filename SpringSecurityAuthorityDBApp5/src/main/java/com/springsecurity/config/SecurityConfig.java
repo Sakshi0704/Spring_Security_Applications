@@ -19,7 +19,8 @@ public class SecurityConfig {
 		http.authorizeHttpRequests(auth -> {
 			auth
 			  .requestMatchers(HttpMethod.POST, "/customers").permitAll()
-			  .requestMatchers(HttpMethod.GET,"/customers","/hello").hasAuthority("VIEWALLCUSTOMER")
+			  .requestMatchers(HttpMethod.GET,"/hello").permitAll()
+			  .requestMatchers(HttpMethod.GET,"/customers").hasAuthority("VIEWALLCUSTOMER")
 			  .requestMatchers(HttpMethod.GET ,"/customers/**").hasAnyAuthority("VIEWALLCUSTOMER","VIEWCUSTOMER") 
 			  // what is ** is showing PathVeriable -----
 			  .anyRequest().authenticated();

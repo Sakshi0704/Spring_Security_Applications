@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.springsecurity.exception.CustomerException;
@@ -18,6 +19,7 @@ import com.springsecurity.model.Customer;
 import com.springsecurity.service.CustomerService;
 
 @RestController
+//@RequestMapping("/jpa")
 public class CustomerController {
 
 	@Autowired
@@ -28,7 +30,7 @@ public class CustomerController {
 	
 	
 	//http://localhost:8088/swagger-ui/index.html#/ --> use this url while using swagger
-	@GetMapping("/hello") //http://localhost:8082/jpa/hello
+	@GetMapping("/hello") //http://localhost:8082/hello
 	public String testHandler() {
 		return "Welcome to Spring Security";
 	}
@@ -56,7 +58,7 @@ public class CustomerController {
 	// add also another Customer with only one authority "VIEWCUSTOMER"
 	
 	// to register any customer...
-	@PostMapping("/customers")  //http://localhost:8082/jpa/customers
+	@PostMapping("/customers")  //http://localhost:8082/customers
 	public ResponseEntity<Customer> saveCustomerHandler(@RequestBody Customer customer){
 		
 		customer.setPassword(passwordEncoder.encode(customer.getPassword()));
