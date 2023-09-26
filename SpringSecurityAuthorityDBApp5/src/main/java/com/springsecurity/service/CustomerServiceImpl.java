@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.springsecurity.exception.CustomerException;
+import com.springsecurity.model.Authority;
 import com.springsecurity.model.Customer;
 import com.springsecurity.repository.CustomerRepository;
 
@@ -18,6 +19,9 @@ public class CustomerServiceImpl implements CustomerService{
 	@Override
 	public Customer registerCustomer(Customer customer) {
 		// TODO Auto-generated method stub
+		List<Authority> authorities = customer.getAuthorities();
+		
+		authorities.forEach(a -> a.setCustomer(customer));
 		
 		return customerRepository.save(customer);
 	}
