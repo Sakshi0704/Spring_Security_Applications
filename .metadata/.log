@@ -7282,3 +7282,93 @@ java.lang.InterruptedException
 
 !ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-27 00:02:28.301
 !MESSAGE Classpath changed for project: SpringSecurity-With-Cross-Origin-DBApp7
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-09-27 00:22:05.998
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-27 00:28:20.608
+!MESSAGE Classpath changed for project: SpringSecurity-With-Cross-Origin-DBApp7
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-27 00:28:20.608
+!MESSAGE Boot project REMOVED: SpringSecurity-With-Cross-Origin-DBApp7
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-27 00:28:20.608
+!MESSAGE Classpath changed for project: SpringSecurityr-With-Cross-Origin-DBApp7
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-27 00:28:22.291
+!MESSAGE Classpath changed for project: SpringSecurityr-With-Cross-Origin-DBApp7
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-27 00:28:22.298
+!MESSAGE Boot project ADDED: SpringSecurityr-With-Cross-Origin-DBApp7
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-27 00:28:39.136
+!MESSAGE Classpath changed for project: SpringSecurityRoll-With-Cross-Origin-DBApp7
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-27 00:28:39.137
+!MESSAGE Classpath changed for project: SpringSecurityr-With-Cross-Origin-DBApp7
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-27 00:28:39.137
+!MESSAGE Boot project REMOVED: SpringSecurityr-With-Cross-Origin-DBApp7
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2023-09-27 00:28:39.205
+!MESSAGE Failed to refresh Code Minings for editor.
+!STACK 1
+Java Model Exception: Error in Java Model (code 969): SpringSecurityr-With-Cross-Origin-DBApp7 does not exist
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:574)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getPerProjectInfoCheckExistence(JavaModelManager.java:2504)
+	at org.eclipse.jdt.internal.core.JavaProject.getPerProjectInfo(JavaProject.java:2444)
+	at org.eclipse.jdt.internal.core.JavaProject.getRawClasspath(JavaProject.java:2487)
+	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl.lambda$9(STS4LanguageClientImpl.java:428)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ReusableClasspathListenerHandler$CallbackJob.lambda$0(ReusableClasspathListenerHandler.java:76)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ReusableClasspathListenerHandler$CallbackJob.run(ReusableClasspathListenerHandler.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2023-09-27 00:28:39.205
+!MESSAGE SpringSecurityr-With-Cross-Origin-DBApp7 does not exist
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2023-09-27 00:28:39.205
+!MESSAGE Failed to refresh Code Minings for editor.
+!STACK 1
+Java Model Exception: Error in Java Model (code 969): SpringSecurityr-With-Cross-Origin-DBApp7 does not exist
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:574)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getPerProjectInfoCheckExistence(JavaModelManager.java:2504)
+	at org.eclipse.jdt.internal.core.JavaProject.getPerProjectInfo(JavaProject.java:2444)
+	at org.eclipse.jdt.internal.core.JavaProject.getRawClasspath(JavaProject.java:2487)
+	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl.lambda$9(STS4LanguageClientImpl.java:428)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ReusableClasspathListenerHandler$CallbackJob.lambda$0(ReusableClasspathListenerHandler.java:76)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ReusableClasspathListenerHandler$CallbackJob.run(ReusableClasspathListenerHandler.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2023-09-27 00:28:39.205
+!MESSAGE SpringSecurityr-With-Cross-Origin-DBApp7 does not exist
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2023-09-27 00:28:39.206
+!MESSAGE Failed to refresh Code Minings for editor.
+!STACK 1
+Java Model Exception: Error in Java Model (code 969): SpringSecurityr-With-Cross-Origin-DBApp7 does not exist
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:574)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getPerProjectInfoCheckExistence(JavaModelManager.java:2504)
+	at org.eclipse.jdt.internal.core.JavaProject.getPerProjectInfo(JavaProject.java:2444)
+	at org.eclipse.jdt.internal.core.JavaProject.getRawClasspath(JavaProject.java:2487)
+	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl.lambda$9(STS4LanguageClientImpl.java:428)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ReusableClasspathListenerHandler$CallbackJob.lambda$0(ReusableClasspathListenerHandler.java:76)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ReusableClasspathListenerHandler$CallbackJob.run(ReusableClasspathListenerHandler.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2023-09-27 00:28:39.206
+!MESSAGE SpringSecurityr-With-Cross-Origin-DBApp7 does not exist
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-27 00:28:40.767
+!MESSAGE Classpath changed for project: SpringSecurityRoll-With-Cross-Origin-DBApp7
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-27 00:28:40.768
+!MESSAGE Boot project ADDED: SpringSecurityRoll-With-Cross-Origin-DBApp7
