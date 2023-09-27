@@ -11,3 +11,11 @@ public class SpringSecurityAuthorityDbApp5Application {
 	}
 
 }
+
+
+/*
+ * 
+ * Providing to customer some authorities
+ * 
+ * 
+ * */

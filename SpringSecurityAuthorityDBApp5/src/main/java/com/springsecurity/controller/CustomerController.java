@@ -70,20 +70,20 @@ public class CustomerController {
 	}
 	
 	
-	@GetMapping("/customers/{email}") //http://localhost:8082/jpa/customers/ravi@gmail.com
+	@GetMapping("/customers/{email}") //http://localhost:8082/customers/ravi@gmail.com
 	public ResponseEntity<Customer> getCustomerByEmailHandler(@PathVariable("email") String email) throws CustomerException{
 		Customer customer = customerService.getCustomerDetailsByEmail(email);
 		
 		return new ResponseEntity<>(customer,HttpStatus.OK);
 	}
 	
-	@GetMapping("/customers") //http://localhost:8082/jpa/customers
+	@GetMapping("/customers") //http://localhost:8082/customers
 	public ResponseEntity<List<Customer>> getAllCustomerHandler() throws CustomerException{
 		List<Customer> customers = customerService.getAllCustomerDetails();
 		return new ResponseEntity<>(customers,HttpStatus.OK);
 	}
 	
-	@GetMapping("/signIn") //http://localhost:8082/jpa/signIn
+	@GetMapping("/signIn") //http://localhost:8082/signIn
 	public ResponseEntity<String> getLoggedInCustomerDetailsHandler(Authentication auth) throws CustomerException{
 		
 		System.out.println(auth); // this Authentication object having Principle object details

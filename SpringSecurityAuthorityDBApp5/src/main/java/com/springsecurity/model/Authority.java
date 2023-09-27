@@ -18,7 +18,7 @@ public class Authority {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer authId;
 	
-	@Column(unique = true)
+	//@Column(unique = true)
 	private String name;
 	
 	@JsonIgnore
