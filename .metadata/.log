@@ -7252,3 +7252,12 @@ Java Model Exception: Error in Java Model (code 969): SpringSecurityAuthorityDBA
 
 !ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-26 21:34:46.975
 !MESSAGE Classpath changed for project: SpringSecurity-WithAuthorities-DBApp5
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-26 21:37:17.691
+!MESSAGE Classpath changed for project: SpringSecurity-With-Role-Based-AuthorityDBApp6
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-26 21:37:17.693
+!MESSAGE Boot project ADDED: SpringSecurity-With-Role-Based-AuthorityDBApp6
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-26 21:37:18.819
+!MESSAGE Classpath changed for project: SpringSecurity-With-Role-Based-AuthorityDBApp6
