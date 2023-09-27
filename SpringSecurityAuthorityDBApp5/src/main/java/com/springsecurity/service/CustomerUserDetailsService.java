@@ -1,4 +1,4 @@
-package com.springsecurity.service;
+ package com.springsecurity.service;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -39,10 +39,23 @@ public class CustomerUserDetailsService implements UserDetailsService{
 				 authorities.add(new SimpleGrantedAuthority(auth.getName())); 
 			 }
 		      return new User(customer.getEmail(), customer.getPassword(), authorities);
+//return new User(customer.getEmail(),customer.getPassword(), getGrantedAuthorities(customer.getAuthorities()));
+		      
 		 }else {
 			 throw new BadCredentialsException("User Details not found with this username : "+ username);
 		 }
 
 	}
+/*	
+	public List<GrantedAuthority> getGrantedAuthorities(List<Authority> authorities){
+		
+		List<GrantedAuthority> grantedAuthorities = new ArrayList<>();
+		for(Authority authority : authorities) {
+			grantedAuthorities.add(new SimpleGrantedAuthority(authority.getName()));
+		}
+		return grantedAuthorities;
+	}
+	
+*/
 	
 }
