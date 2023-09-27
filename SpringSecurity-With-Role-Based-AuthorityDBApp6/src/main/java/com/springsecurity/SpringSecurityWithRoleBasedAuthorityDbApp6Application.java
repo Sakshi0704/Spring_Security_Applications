@@ -11,3 +11,8 @@ public class SpringSecurityWithRoleBasedAuthorityDbApp6Application {
 	}
 
 }
+
+/*
+ * Authorities Role-Based Application
+ * 
+ * */
