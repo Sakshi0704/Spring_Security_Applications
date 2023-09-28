@@ -31,7 +31,7 @@ public class CustomerController {
 	
 	
 	//http://localhost:8088/swagger-ui/index.html#/ --> use this url while using swagger
-	@GetMapping("/hello") //http://localhost:8082/hello
+	@GetMapping("/hello") //http://localhost:8083/hello
 	public String testHandler() {
 		return "Welcome to Spring Security";
 	}
@@ -51,7 +51,7 @@ public class CustomerController {
 	// add also another Customer with only one authority "user"
 	
 	// to register any customer...
-	@PostMapping("/customers")  //http://localhost:8082/customers
+	@PostMapping("/customers")  //http://localhost:8083/customers
 	public ResponseEntity<Customer> saveCustomerHandler(@RequestBody Customer customer){
 		
 		customer.setPassword(passwordEncoder.encode(customer.getPassword()));

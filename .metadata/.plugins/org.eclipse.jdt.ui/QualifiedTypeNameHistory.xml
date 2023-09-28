@@ -27,7 +27,6 @@
     <fullyQualifiedTypeName name="org.springframework.data.jpa.repository.JpaRepository"/>
     <fullyQualifiedTypeName name="org.springframework.stereotype.Repository"/>
     <fullyQualifiedTypeName name="org.springframework.security.core.userdetails.UserDetailsService"/>
-    <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
     <fullyQualifiedTypeName name="com.springsecurity.repository.CustomerRepository"/>
     <fullyQualifiedTypeName name="java.util.Optional"/>
     <fullyQualifiedTypeName name="com.springsecurity.exception.CustomerException"/>
@@ -58,6 +57,7 @@
     <fullyQualifiedTypeName name="org.springframework.security.web.csrf.CsrfToken"/>
     <fullyQualifiedTypeName name="org.springframework.security.web.csrf.CsrfTokenRequestHandler"/>
     <fullyQualifiedTypeName name="org.springframework.security.web.csrf.CsrfTokenRequestAttributeHandler"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
     <fullyQualifiedTypeName name="org.springframework.security.web.csrf.CookieCsrfTokenRepository"/>
     <fullyQualifiedTypeName name="org.springframework.security.web.authentication.www.BasicAuthenticationFilter"/>
 </qualifiedTypeNameHistroy>

@@ -16,22 +16,23 @@ import org.springframework.security.web.csrf.CsrfTokenRequestAttributeHandler;
 public class SecurityConfig {
 	
 	@Bean
-	public SecurityFilterChain springSecurityConfiguration(HttpSecurity http) throws Exception{
+     public SecurityFilterChain springSecurityConfiguration(HttpSecurity http) throws Exception{
 		
 		CsrfTokenRequestAttributeHandler requestHandler = new CsrfTokenRequestAttributeHandler();
 		
 		http.authorizeHttpRequests(auth -> {
 			auth
 			  .requestMatchers(HttpMethod.POST, "/customers").permitAll()
+			  .requestMatchers("/hello").permitAll()
 			  .requestMatchers(HttpMethod.GET,"/customers","/hello").hasRole("ADMIN")
-			  .requestMatchers(HttpMethod.GET ,"/customers/**").hasAnyRole("ADMIN","USER") 
-			  // what is ** is showing PathVeriable -----
+			  .requestMatchers(HttpMethod.GET ,"/customers/**").hasAnyRole("ADMIN","USER")  // what is ** is showing PathVeriable -----
 			  .anyRequest().authenticated();
 		})
 		.csrf(csrf -> csrf.csrfTokenRequestHandler(requestHandler)
 				.ignoringRequestMatchers("/notice","/contact","/customers")
 					.csrfTokenRepository(CookieCsrfTokenRepository.withHttpOnlyFalse()))
 		.addFilterAfter(new CsrfCookieFilter(), BasicAuthenticationFilter.class)
+		//.csrf(csrf -> csrf.disable())
 		.formLogin(Customizer.withDefaults())
 		.httpBasic(Customizer.withDefaults());
 		
