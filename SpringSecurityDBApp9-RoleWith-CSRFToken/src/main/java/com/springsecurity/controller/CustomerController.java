@@ -33,7 +33,7 @@ public class CustomerController {
 	
 	
 	//http://localhost:8088/swagger-ui/index.html#/ --> use this url while using swagger
-	@GetMapping("/hello") //http://localhost:8083/hello
+	@GetMapping("/hello") //http://localhost:8084/hello
 	public String testHandler() {
 		return "Welcome to Spring Security";
 	}
@@ -53,7 +53,7 @@ public class CustomerController {
 	// add also another Customer with only one authority "user"
 	
 	// to register any customer...
-	@PostMapping("/customers")  //http://localhost:8083/customers
+	@PostMapping("/customers")  //http://localhost:8084/customers
 	public ResponseEntity<Customer> saveCustomerHandler(@RequestBody Customer customer){
 		
 		customer.setPassword(passwordEncoder.encode(customer.getPassword()));
@@ -67,20 +67,20 @@ public class CustomerController {
 	}
 	
 	
-	@GetMapping("/customers/{email}") //http://localhost:8082/customers/ravi@gmail.com
+	@GetMapping("/customers/{email}") //http://localhost:8084/customers/ravi@gmail.com
 	public ResponseEntity<Customer> getCustomerByEmailHandler(@PathVariable("email") String email) throws CustomerException{
 		Customer customer = customerService.getCustomerDetailsByEmail(email);
 		
 		return new ResponseEntity<>(customer,HttpStatus.OK);
 	}
 	
-	@GetMapping("/customers") //http://localhost:8082/customers
+	@GetMapping("/customers") //http://localhost:8084/customers
 	public ResponseEntity<List<Customer>> getAllCustomerHandler() throws CustomerException{
 		List<Customer> customers = customerService.getAllCustomerDetails();
 		return new ResponseEntity<>(customers,HttpStatus.OK);
 	}
 	
-	@GetMapping("/signIn") //http://localhost:8082/signIn
+	@GetMapping("/signIn") //http://localhost:8084/signIn
 	public ResponseEntity<String> getLoggedInCustomerDetailsHandler(Authentication auth) throws CustomerException{
 		
 		System.out.println(auth); // this Authentication object having Principle object details
