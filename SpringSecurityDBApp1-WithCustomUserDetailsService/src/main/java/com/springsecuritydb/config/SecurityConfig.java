@@ -33,3 +33,4 @@ public class SecurityConfig {
 		// this is one of the hashing technique and recommendated one
 	}
 }
+/*Writing the securityFilterChain which help us to deal with authrizes */
