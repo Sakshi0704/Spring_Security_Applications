@@ -11,6 +11,7 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 public class SpringSecurityDbApp8RoleWithCsrfApplication {
 
 	public static void main(String[] args) {
+
 		SpringApplication.run(SpringSecurityDbApp8RoleWithCsrfApplication.class, args);
 	}
 
@@ -18,11 +19,15 @@ public class SpringSecurityDbApp8RoleWithCsrfApplication {
 
 
 /*
+ * which filter add we don't use this type of filter this application is only here to 
+ *  domenstrate that how to create filter and add in chain filter..
+ * 
  *1) make the csrf filter disable in spring security ( or either create filter for csrf
  *	while login any user then genrate the xsrf token in response and then in every request 
  *  take the xsrf token from hearder and send back xsrf new token throw header...
  *  
- *2) in the application creating the one filter RequestValidationFilter and used that filter 
+ *2) in the application creating the two filters RequestValidationFilter and 
+ * and used these filters
  *	 in filter chain in respected provided order..
  *	creating class RequestValidationFilter.java
  *	then used one like addFilterAfter(-,-) in SecurityConfig.java class

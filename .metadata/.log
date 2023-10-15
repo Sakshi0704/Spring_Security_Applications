@@ -539,3 +539,199 @@ java.util.concurrent.TimeoutException
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+!SESSION 2023-10-14 22:19:33.373 -----------------------------------------------
+eclipse.buildId=4.19.1.202308011926
+java.version=17.0.7
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.emf.ecore 2 0 2023-10-14 22:19:35.796
+!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+
+!ENTRY org.eclipse.jface 2 0 2023-10-14 22:20:19.181
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-10-14 22:20:19.183
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-10-14 22:20:23.266
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+C:\Program Files\sts-4.19.1.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.7.v20230425-1502\jre\bin\javaw.exe
+-cp
+C:\Program Files\sts-4.19.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.48.0.202308011907\servers\spring-boot-language-server\BOOT-INF\classes;C:\Program Files\sts-4.19.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.48.0.202308011907\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Dlsp.completions.indentation.enable=true
+-Xmx1024m
+-XX:+HeapDumpOnOutOfMemoryError
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:C:\Program Files\sts-4.19.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.48.0.202308011907\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=C:/Spring_Security_Applications/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1697350823263
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-14 22:20:23.267
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-10-14 22:20:23.293
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 10156
+
+!ENTRY org.eclipse.egit.ui 2 0 2023-10-14 22:20:24.767
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\HP'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-14 22:20:25.422
+!MESSAGE Boot project ADDED: SpringSecurity-InMemory-App4-UsingRequestBodyAuthentication
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-14 22:20:25.423
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-14 22:20:25.424
+!MESSAGE Started Boot LS process
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-14 22:20:25.425
+!MESSAGE Boot project ADDED: SpringSecurity-With-Role-Based-AuthorityDBApp6
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-14 22:20:25.426
+!MESSAGE Boot project ADDED: SpringSecurity-WithAuthorities-DBApp5
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-14 22:20:25.426
+!MESSAGE Boot project ADDED: SpringSecurityDBApp1-WithCustomUserDetailsService
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-14 22:20:25.428
+!MESSAGE Boot project ADDED: SpringSecurityDBApp10-With-Filter
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-14 22:20:25.429
+!MESSAGE Boot project ADDED: SpringSecurityDBApp2-WithCustomUserDetails-NotUsing-User Implemetaiion-Of-UserDetails
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-14 22:20:25.522
+!MESSAGE Boot project ADDED: SpringSecurityDBApp3-WithCutomAuthenticationProviderImplementation
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-14 22:20:25.570
+!MESSAGE Boot project ADDED: SpringSecurityDBApp8-RoleWith-CSRF
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-14 22:20:25.620
+!MESSAGE Boot project ADDED: SpringSecurityDBApp9-RoleWith-CSRFToken
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-14 22:20:25.709
+!MESSAGE Boot project ADDED: SpringSecurityRoll-With-Cross-Origin-DBApp7
+!SESSION 2023-10-14 22:27:49.357 -----------------------------------------------
+eclipse.buildId=4.19.1.202308011926
+java.version=17.0.7
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.emf.ecore 2 0 2023-10-14 22:27:50.623
+!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+
+!ENTRY org.eclipse.jface 2 0 2023-10-14 22:28:12.880
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-10-14 22:28:12.880
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-10-14 22:28:16.262
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+C:\Program Files\sts-4.19.1.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.7.v20230425-1502\jre\bin\javaw.exe
+-cp
+C:\Program Files\sts-4.19.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.48.0.202308011907\servers\spring-boot-language-server\BOOT-INF\classes;C:\Program Files\sts-4.19.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.48.0.202308011907\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Dlsp.completions.indentation.enable=true
+-Xmx1024m
+-XX:+HeapDumpOnOutOfMemoryError
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:C:\Program Files\sts-4.19.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.48.0.202308011907\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=C:/Spring_Security_Applications/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1697351296261
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-14 22:28:16.262
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-10-14 22:28:16.291
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 9116
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-14 22:28:17.848
+!MESSAGE Boot project ADDED: SpringSecurity-InMemory-App4-UsingRequestBodyAuthentication
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-14 22:28:17.859
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-14 22:28:17.865
+!MESSAGE Started Boot LS process
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-14 22:28:17.866
+!MESSAGE Boot project ADDED: SpringSecurity-With-Role-Based-AuthorityDBApp6
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-14 22:28:17.869
+!MESSAGE Boot project ADDED: SpringSecurity-WithAuthorities-DBApp5
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-14 22:28:17.871
+!MESSAGE Boot project ADDED: SpringSecurityDBApp1-WithCustomUserDetailsService
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-14 22:28:17.872
+!MESSAGE Boot project ADDED: SpringSecurityDBApp10-With-Filter
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-14 22:28:17.873
+!MESSAGE Boot project ADDED: SpringSecurityDBApp2-WithCustomUserDetails-NotUsing-User Implemetaiion-Of-UserDetails
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-14 22:28:17.874
+!MESSAGE Boot project ADDED: SpringSecurityDBApp3-WithCutomAuthenticationProviderImplementation
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-14 22:28:17.875
+!MESSAGE Boot project ADDED: SpringSecurityDBApp8-RoleWith-CSRF
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-14 22:28:17.877
+!MESSAGE Boot project ADDED: SpringSecurityDBApp9-RoleWith-CSRFToken
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-14 22:28:17.877
+!MESSAGE Boot project ADDED: SpringSecurityRoll-With-Cross-Origin-DBApp7
+
+!ENTRY org.eclipse.egit.ui 2 0 2023-10-14 22:28:17.891
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\HP'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.

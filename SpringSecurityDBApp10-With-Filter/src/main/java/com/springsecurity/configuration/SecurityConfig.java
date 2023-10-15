@@ -24,7 +24,9 @@ public class SecurityConfig {
 			  // what is ** is showing PathVeriable -----
 			  .anyRequest().authenticated();
 		}).csrf(csrf -> csrf.disable())
-		.addFilterBefore(new RequestValidationFilter(), BasicAuthenticationFilter.class)
+		.addFilterBefore(new RequestValidationBeforeFilter(), BasicAuthenticationFilter.class)
+		.addFilterAfter(new AuthoritiesLogginAfterFilter(), BasicAuthenticationFilter.class)
+		.addFilterAt(new LoggingFilterAt(), BasicAuthenticationFilter.class)
 		.formLogin(Customizer.withDefaults())
 		.httpBasic(Customizer.withDefaults());
 		
