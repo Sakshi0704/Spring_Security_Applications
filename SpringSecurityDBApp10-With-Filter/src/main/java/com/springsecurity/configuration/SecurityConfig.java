@@ -8,6 +8,7 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
+import org.springframework.security.web.authentication.www.BasicAuthenticationFilter;
 
 @Configuration
 public class SecurityConfig {
@@ -22,10 +23,8 @@ public class SecurityConfig {
 			  .requestMatchers(HttpMethod.GET ,"/customers/**").hasAnyRole("ADMIN","USER") 
 			  // what is ** is showing PathVeriable -----
 			  .anyRequest().authenticated();
-		})
-		.csrf(csrf -> csrf.ignoringRequestMatchers("/notice","/contact","/customers")) 
-		                        // here you can class notice, contact, customers 
-		                       //but not writeUs even if you authenticate yourself for csrf protection
+		}).addFilterBefore(new RequestValidationFilter(), BasicAuthenticationFilter.class)
+		.csrf(csrf -> csrf.disable())
 		.formLogin(Customizer.withDefaults())
 		.httpBasic(Customizer.withDefaults());
 		
