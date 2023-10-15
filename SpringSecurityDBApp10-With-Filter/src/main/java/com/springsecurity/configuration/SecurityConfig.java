@@ -23,8 +23,8 @@ public class SecurityConfig {
 			  .requestMatchers(HttpMethod.GET ,"/customers/**").hasAnyRole("ADMIN","USER") 
 			  // what is ** is showing PathVeriable -----
 			  .anyRequest().authenticated();
-		}).addFilterBefore(new RequestValidationFilter(), BasicAuthenticationFilter.class)
-		.csrf(csrf -> csrf.disable())
+		}).csrf(csrf -> csrf.disable())
+		.addFilterBefore(new RequestValidationFilter(), BasicAuthenticationFilter.class)
 		.formLogin(Customizer.withDefaults())
 		.httpBasic(Customizer.withDefaults());
 		
@@ -33,8 +33,8 @@ public class SecurityConfig {
 	
 	@Bean
 	public PasswordEncoder passwordEncoder() {
-		return new BCryptPasswordEncoder(); 
 		// this is one of the hashing technique and recommendated one
+		return new BCryptPasswordEncoder(); 
 	}
 	
 }
