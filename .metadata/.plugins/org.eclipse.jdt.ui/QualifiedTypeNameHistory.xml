@@ -55,9 +55,9 @@
     <fullyQualifiedTypeName name="org.springframework.security.web.authentication.www.BasicAuthenticationFilter"/>
     <fullyQualifiedTypeName name="org.springframework.security.config.Customizer"/>
     <fullyQualifiedTypeName name="org.springframework.security.config.annotation.web.configuration.EnableWebSecurity"/>
-    <fullyQualifiedTypeName name="jakarta.servlet.Filter"/>
     <fullyQualifiedTypeName name="org.slf4j.LoggerFactory"/>
     <fullyQualifiedTypeName name="org.slf4j.Logger"/>
     <fullyQualifiedTypeName name="org.springframework.security.core.context.SecurityContextHolder"/>
     <fullyQualifiedTypeName name="org.springframework.security.core.Authentication"/>
+    <fullyQualifiedTypeName name="jakarta.servlet.Filter"/>
 </qualifiedTypeNameHistroy>
