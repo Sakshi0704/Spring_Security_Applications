@@ -116,7 +116,7 @@ public class CustomerController {
 		return "Not harmfull PUT operation";
 	}
 	
-	@PostMapping("/writeUs")
+	@PostMapping("/writeUs")  // new jwt token as well as X-XSRF-Token
 	public String postDemo3() {
 		return "It is harmfull POST operation";
 	}
