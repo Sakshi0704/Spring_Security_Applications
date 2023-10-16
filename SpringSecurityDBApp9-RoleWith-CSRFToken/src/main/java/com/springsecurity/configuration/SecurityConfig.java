@@ -55,8 +55,9 @@ public class SecurityConfig {
 				.ignoringRequestMatchers("/notice","/contact","/customers")
 					.csrfTokenRepository(CookieCsrfTokenRepository.withHttpOnlyFalse()))
 		.addFilterAfter(new CsrfCookieFilter(), BasicAuthenticationFilter.class)
-		.addFilterAfter(new JwtTokenGeneratorFilter(), BasicAuthenticationFilter.class)
 		//.csrf(csrf -> csrf.disable())
+		.addFilterAfter(new JwtTokenGeneratorFilter(), BasicAuthenticationFilter.class)
+		.addFilterBefore(new JwtTokenValidatorFilter(), BasicAuthenticationFilter.class)
 		.formLogin(Customizer.withDefaults())
 		.httpBasic(Customizer.withDefaults());
 		
